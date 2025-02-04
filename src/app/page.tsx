@@ -157,6 +157,60 @@ export default function Page({ searchParams }: FormProps) {
             </div>
           </div>
         </Section>
+        <Section
+          className="pb-4 pt-6 sm:py-12 px-4"
+        >
+          <div className="flex flex-col gap-4 sm:gap-8 items-center">
+            <h2 className="text-xl sm:text-3xl text-white text-center max-w-2xl">"<strong className="text-[#C4DC73]">Uma em cada três crianças</strong> menores de 5 anos
+              não está recebendo a <strong className="text-[#C4DC73]">nutrição necessária</strong> para crescer bem"</h2>
+            <div className="relative w-full h-[220px] sm:hidden">
+              <Image
+                src="/images/noticia4.png"
+                alt="Notícia"
+                layout="fill"
+                // width={1060}
+                // height={537}
+                objectFit="contain"
+              />
+            </div>
+            <div className="relative hidden sm:block sm:w-[672px] sm:h-[382px]">
+              <Image
+                src="/images/noticia3.png"
+                alt="Notícia"
+                layout="fill"
+                // width={1060}
+                // height={537}
+                objectFit="contain"
+              />
+            </div>
+          </div>
+        </Section>
+        <Section
+          className="pb-8 pt-0 sm:py-0 px-4"
+        >
+          <div className="w-full flex flex-col gap-4 sm:gap-8 items-center">
+            <div className="relative w-full h-[220px] sm:hidden">
+              <Image
+                src="/images/noticia5.png"
+                alt="Notícia"
+                layout="fill"
+                // width={1060}
+                // height={537}
+                objectFit="contain"
+              />
+            </div>
+            <div className="relative hidden sm:block sm:w-[672px] sm:h-[382px]">
+              <Image
+                src="/images/noticia6.png"
+                alt="Notícia"
+                layout="fill"
+                // width={1060}
+                // height={537}
+                objectFit="contain"
+              />
+            </div>
+          </div>
+        </Section>
         <section
           className="pt-0 pb-12 sm:py-12"
         >
@@ -314,12 +368,12 @@ export default function Page({ searchParams }: FormProps) {
               </div>
             </div>
             <div className="relative sm:hidden block w-full h-[462px] mt-4">
-                <Image
-                  src="/images/fabiana.png"
-                  alt="Foto da Fabiana"
-                  layout="fill"
-                  objectFit="contain"
-                />
+              <Image
+                src="/images/fabiana.png"
+                alt="Foto da Fabiana"
+                layout="fill"
+                objectFit="contain"
+              />
             </div>
           </Section>
         </div>
