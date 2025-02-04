@@ -161,8 +161,8 @@ export default function Page({ searchParams }: FormProps) {
           className="pb-4 pt-6 sm:py-12 px-4"
         >
           <div className="flex flex-col gap-4 sm:gap-8 items-center">
-            <h2 className="text-xl sm:text-3xl text-white text-center max-w-2xl">"<strong className="text-[#C4DC73]">Uma em cada três crianças</strong> menores de 5 anos
-              não está recebendo a <strong className="text-[#C4DC73]">nutrição necessária</strong> para crescer bem"</h2>
+            <h2 className="text-xl sm:text-3xl text-white text-center max-w-2xl">{`"`}<strong className="text-[#C4DC73]">Uma em cada três crianças</strong> menores de 5 anos
+              não está recebendo a <strong className="text-[#C4DC73]">nutrição necessária</strong> para crescer bem{`"`}</h2>
             <div className="relative w-full h-[220px] sm:hidden">
               <Image
                 src="/images/noticia4.png"
