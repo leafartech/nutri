@@ -46,7 +46,12 @@
       #82652B 100%
     );
 }
-
+.radial-01  {
+  background: radial-gradient(circle, #645b5a 0%, #514746 100%);
+}
+.radial-02  {
+  background: radial-gradient(circle, #877776 0%, #514746 100%);
+}
 .swiper {
   display: flex;
   justify-content: center;
