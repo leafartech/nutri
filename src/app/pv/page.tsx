@@ -13,7 +13,7 @@ export default function Page() {
                     <h4 className="text-xl">E <strong className="text-[#B9E89B]">cobre 3x</strong> mais nas suas consultas!</h4>
                     <p className="text-xl">Receba acesso a um conhecimento avançado e prático de Suplementação, e efetue atendimentos mais eficientes.</p>
                     <a href="#preco" className="max-w-md w-full text-center bg-[#b3c674] border border-[#FFE8D8] uppercase text-white font-semibold py-4 px-6 rounded-xl">Quero garantir minha certificação</a>
-                    <svg className="absolute bottom-12 w-12 h-12 fill-zinc-200 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m480-313 156-155q11-11 27.5-11.5T692-468q11 11 11 28t-11 28L508-228q-6 6-13 8.5t-15 2.5q-8 0-15-2.5t-13-8.5L268-412q-11-11-11.5-27.5T268-468q11-11 28-11t28 11l156 155Zm0-240 156-155q11-11 27.5-11.5T692-708q11 11 11 28t-11 28L508-468q-6 6-13 8.5t-15 2.5q-8 0-15-2.5t-13-8.5L268-652q-11-11-11.5-27.5T268-708q11-11 28-11t28 11l156 155Z"/></svg>
+                    <svg className="absolute bottom-12 w-12 h-12 fill-zinc-200 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m480-313 156-155q11-11 27.5-11.5T692-468q11 11 11 28t-11 28L508-228q-6 6-13 8.5t-15 2.5q-8 0-15-2.5t-13-8.5L268-412q-11-11-11.5-27.5T268-468q11-11 28-11t28 11l156 155Zm0-240 156-155q11-11 27.5-11.5T692-708q11 11 11 28t-11 28L508-468q-6 6-13 8.5t-15 2.5q-8 0-15-2.5t-13-8.5L268-652q-11-11-11.5-27.5T268-708q11-11 28-11t28 11l156 155Z" /></svg>
                 </div>
             </header>
             <main className="bg-[#514746]">
@@ -55,6 +55,7 @@ export default function Page() {
                         <div className="sm:grid sm:grid-cols-2 flex flex-col gap-4">
                             {bonusData.map(item => (
                                 <Bonus
+                                    key={item.title}
                                     title={item.title}
                                     description={item.description}
                                 />
@@ -93,7 +94,7 @@ export default function Page() {
                             <h2 className="text-3xl sm:text-4xl font-semibold">Afinal, quem é Fabiana Montanholi?</h2>
                             <div className="flex flex-col gap-4 text-lg">
                                 <p>Nutricionista Materno Infantil, com grande destaque e reconhecimento na área da suplementação.</p>
-                                <p>Atualmente Professora de Pós-Graduações em Nutrição Materno Infantil, ministrando o módulo de "Suplementação Materno Infantil", é também mentora de Nutricionistas.</p>
+                                <p>Atualmente Professora de Pós-Graduações em Nutrição Materno Infantil, ministrando o módulo de <strong className="text-[#B9E89B]">Suplementação Materno Infantil</strong>, é também mentora de Nutricionistas.</p>
                                 <p>Já impactou a vida de centenas de famílias nos seus atendimentos, através da suplementação e hoje divide sua jornada de trabalho auxiliando e ensinando profissionais de saúde com o seu método, para que essas profissionais conquistem segurança, confiança e reconhecimento através da Suplementação Materno Infantil</p>
                                 <p>Tem como missão transformar a carreira de Profissionais de Saúde Materno Infantil, fazendo com que eles dominem a suplementação e consigam aplicar com excelência.</p>
                             </div>
@@ -113,12 +114,13 @@ export default function Page() {
                             <ul className="sm:grid sm:grid-cols-2 flex flex-col gap-4">
                                 {dropdownData.map(item => (
                                     <Dropdown
+                                        key={item.title}
                                         {...item}
                                     />
                                 ))}
                             </ul>
                         </div>
-                        
+
                     </div>
                 </Section>
             </main>
