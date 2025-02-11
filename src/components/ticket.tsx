@@ -25,13 +25,13 @@ export default function Ticket() {
             <h2 className="text-3xl sm:text-4xl font-semibold border-b border-zinc-300 px-4 py-8">Oferta especial</h2>
             <div className="text-black flex flex-col items-center justify-center gap-4 px-4 pt-8 pb-6">
                 <div className="text-center flex flex-col gap-1">
-                    <h5 className="text-xl line-through text-red-500">De: R$ 5297,00</h5>
+                    <h5 className="text-xl line-through text-red-500">De: R$ 5.297,00</h5>
                     <div>
-                        <h3 className="text-3xl sm:text-4xl"><span className="text-sm">12x</span> <span className="font-semibold">R$ 279,9</span></h3>
-                        <h5 className="text-sm">ou R$ 2.797 à vista</h5>
+                        <h3 className="text-3xl sm:text-4xl"><span className="text-sm">12x</span> <span className="font-semibold">R$ 230,62</span></h3>
+                        <h5 className="text-sm">ou R$ 2.297 à vista</h5>
                     </div>
                 </div>
-                <a href={`https://pay.kiwify.com.br/J8aCY6f/?${params}`} className="max-w-md w-full text-center bg-[#b3c674] border border-[#FFE8D8] uppercase text-white font-semibold text-sm py-4 px-2 rounded-xl">Quero garantir minha certificação</a>
+                <a href={`https://pay.kiwify.com.br/SdQVbZj/?${params}`} className="max-w-md w-full text-center bg-[#b3c674] border border-[#FFE8D8] uppercase text-white font-semibold text-sm py-4 px-2 rounded-xl">Quero garantir minha certificação</a>
             </div>
         </div>
     )
